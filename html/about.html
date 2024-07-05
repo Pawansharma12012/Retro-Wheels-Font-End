@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us|Retro Wheels</title>
+    <link rel="stylesheet" href="/css/about.css">
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        </button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="landing.html" id="Home">Home</a></li>
+            <li><a href="/html/contactus.html">Contact Us</a></li>
+            <li><a href="/html/categoty.html">Categories</a></li>
+            <li><a href="collab.html">Collaboration</a></li>
+
+        </ul>
+    </nav>
+    <div class="image-container">
+        <div class="image" id="founder">
+            <img src="/founders/WhatsApp Image 2024-05-12 at 14.36.40_118a8deb.jpg" alt="Founder" height="200px">
+            <div class="details">
+                <h3>Founder&CEO: Rashiya </h3>
+                <p>Founder Bio or Description</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container2">
+        <div class="image2" id="co-founder">
+            <img src="/founders/IMG_20240426_212017.jpg" alt="Founder" height="200px">
+            <div class="details">
+                <h3>Co-Founder: Pawan Sharma</h3>
+                <p>Founder Bio or Description</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const details = document.querySelector('.details');
+
+        // Add event listeners to image for mouseover and mouseout
+        const image = document.querySelector('.image');
+        image.addEventListener('mouseover', () => {
+            details.style.display = 'block';
+        });
+        image.addEventListener('mouseout', () => {
+            details.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
